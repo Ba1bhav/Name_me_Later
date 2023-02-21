@@ -1,0 +1,14 @@
+<h2>{{title}} Works !</h2>
+<nav>
+  <ul>
+    <li>
+  <a routerLink="/compone" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" [fragment]="'end'">One</a>
+  </li>
+  <li><a [routerLink]="['/compotwo',584,'Baibhav']" routerLinkActive="active" [queryParams]="{key:'12345'}">two</a></li>
+  <li><a routerLink="parent">Parent</a></li>
+  <li><a routerLink="empty">empty</a></li>
+</ul>
+</nav>
+<router-outlet></router-outlet>
+
+
